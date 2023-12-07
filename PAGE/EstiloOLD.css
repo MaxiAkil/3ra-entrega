@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+body{
+    background-color: #ffffff;
+}
+
+header {
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+h1 a{
+    font-size: 5rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.foto{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+main {
+    text-align: left;
+    margin-bottom: 100px;
+}
+.video{
+    display: flex;
+    justify-content: center;
+}
+.productos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    grid-template-areas: 
+    "producto producto";
+}
+
+.producto {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.producto-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+
+.producto img {
+    max-height: 200px; 
+    max-width: 100%;
+}
+
+.formulario-contacto {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #240808;
+    border-radius: 5px;
+    width: 65%;
+    margin: 0 auto;
+    text-align: left;
+}
+.formulario-contacto h2 {
+    margin-top: 0;
+}
+.campos li a{
+    text-decoration: none;
+    color: black;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin: 10px 0;
+}
+input, textarea {
+    padding: 5px;
+    margin: 5px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button{
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.tabla{
+    border:solid 1px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+table tr th {
+    padding: 5px
+}
+table tr td {
+    padding: 5px;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.campos{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width:480px) {
+    .productos-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-flow: row;
+        gap: 20px;
+        grid-template-areas: 
+        "producto"
+        "producto";
+    }
+}
